@@ -1,0 +1,35 @@
+# Core
+django
+Psycopg2
+django-htmx
+django-tables2
+
+# API Import
+httpx
+
+# Analysis
+pandas
+ipykernel
+plotly
+seaborn
+fsspec
+openpyxl
+
+# Dev tools
+django-configurations
+envdir
+django-debug-toolbar
+pip-tools
+black
+flake8
+django-environ
+
+# Project-specific
+django-allauth
+django-cacheops
+django-crispy-forms
+django-extensions
+django-filter
+django-google-analytics-app
+ipython
+whitenoise

@@ -1,0 +1,13 @@
+/.vscode/
+
+/research/
+/data/
+/annual_reports/
+
+/staticfiles/
+
+/personal_finance/.env
+
+/ancillary_info/fixtures/
+
+**/__pycache__
