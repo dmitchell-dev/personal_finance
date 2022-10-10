@@ -75,7 +75,7 @@
     </nav>
   </header>
 
-  {% if request.resolver_match.url_name == 'home' or request.resolver_match.url_name == 'dashboard_table' %}
+  {% comment %} {% if request.resolver_match.url_name == 'home' or request.resolver_match.url_name == 'dashboard_table' %}
 
   {% else %}
     <div class="container-fluid">
@@ -86,14 +86,14 @@
           </div>
         </nav>
     </div>
-  {% endif %}
+  {% endif %} {% endcomment %}
 
-  <div class="ms-5 pt-5">
-    <div class="container">
+  {% comment %} <div class="ms-5 pt-5"> {% endcomment %}
+    {% comment %} <div class="container"> {% endcomment %}
       {% block content %}
       {% endblock content %}
-    </div>
-  </div>
+    {% comment %} </div> {% endcomment %}
+  {% comment %} </div> {% endcomment %}
 
   <!-- JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
