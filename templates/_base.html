@@ -75,25 +75,18 @@
     </nav>
   </header>
 
-  {% comment %} {% if request.resolver_match.url_name == 'home' or request.resolver_match.url_name == 'dashboard_table' %}
-
-  {% else %}
-    <div class="container-fluid">
-        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-          <div class="sidebar-sticky">
-            {% block sidebar %}
-            {% endblock sidebar %}
-          </div>
-        </nav>
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
+      {% block sidebar %}
+      {% endblock sidebar %}
+      <div class="col py-3">
+        {% block content %}
+        {% endblock content %}
+      </div>
     </div>
-  {% endif %} {% endcomment %}
+  </div>
 
-  {% comment %} <div class="ms-5 pt-5"> {% endcomment %}
-    {% comment %} <div class="container"> {% endcomment %}
-      {% block content %}
-      {% endblock content %}
-    {% comment %} </div> {% endcomment %}
-  {% comment %} </div> {% endcomment %}
+
 
   <!-- JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
