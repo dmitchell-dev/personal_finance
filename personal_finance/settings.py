@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Third Party
     "crispy_forms",
+    "crispy_bootstrap5",
     "allauth",
     "allauth.account",
     "django_extensions",
@@ -88,7 +89,8 @@ WSGI_APPLICATION = 'personal_finance.wsgi.application'
 SITE_ID = 1
 
 # django-crispy-forms
-CRISPY_TEMPLATE_PACK = "bootstrap4"
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
